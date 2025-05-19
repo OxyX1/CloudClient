@@ -1,0 +1,98 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.surface {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button, input {
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent */
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+/* Make sure the container fills the screen so Vanta is visible */
+#vanta-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: -1; /* behind content */
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns, equal width */
+    gap: 10px; /* space between buttons */
+    margin: 20px;
+}
+
+.flex-div {
+    display: flex;
+}
+
+.glass-dropdown {
+    background: rgba(255, 255, 255, 0.12); /* Softer transparency */
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Smoothed hover effect */
+.glass-dropdown:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.02); /* Subtle scale */
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Animated dropdown */
+.glass-dropdown option {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Improve dropdown visibility */
+.glass-dropdown:focus {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.full-screen {
+    width: 90vw;
+    height: 100vh;
+    margin: 50px;
+}
