@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>cloudclient</title>
+</head>
+<body>
+    <div id="vanta-bg"></div>
+
+    <div class="surface" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 10px; gap: 10px;">
+        <img src="assets/CloudClient.png" alt="couldnt load/find image.." style="position: relative; z-index: 1; margin: 10px; width: 150px; height: 150px;"><br><br>
+        <div class="flex-div">
+            <label for="options">search engine:</label>
+            <select id="options" class="glass-dropdown">
+                <option value="1">Google</option>
+                <option value="2">Firefox</option>
+                <option value="3">Safari</option>
+                <option value="4">Edge</option>
+                <option value="5">Opera</option>
+            </select>
+        </div>
+
+        <div class="flex-div">
+            <label for="options">color theme: </label>
+            <select name="options2" class="glass-dropdown" id="">
+                <option value="1">Cloud Light</option>
+            </select>
+        </div>
+    </div>
+
+    
+
+    <script src="js/background.js"></script>
+</body>
+</html>
